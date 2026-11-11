@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting Eligibility</title>
+    <link rel="stylesheet" href="practice.css">
+</head>
+<body>
+    <main class="election-card">
+        <span class="badge">Voting Check</span>
+        <h1>Are you eligible to vote?</h1>
+        <p class="subtitle">Enter your birth year to see if you meet the minimum voting age requirement.</p>
+
+        <label for="input">Birth year</label>
+        <div class="input-wrap">
+            <input type="number" id="input" placeholder="Enter your birth year" min="1900" max="2100">
+        </div>
+
+        <div id="display">
+            <p>Your voting status will appear here.</p>
+        </div>
+
+        <button type="button" onclick="check()">Check Eligibility</button>
+    </main>
+
+    <script src="practice.js"></script>
+</body>
+</html>
